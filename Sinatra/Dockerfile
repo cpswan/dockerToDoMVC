@@ -26,4 +26,4 @@ EXPOSE 4567
 CMD /usr/bin/ruby /opt/sinatra-ToDoMVC-docker/app.rb
 
 # example usage:
-# sudo docker run -d -p 4567:4567 -name todomvc:app -link todomvc:db cpswan/todomvc_sinatra
+# sudo docker run -d -p 4567:4567 -name todomvc:app -link todomvc:db cpswan/todomvc.sinatra
