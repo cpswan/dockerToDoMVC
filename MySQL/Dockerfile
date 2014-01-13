@@ -23,4 +23,4 @@ EXPOSE 3306
 CMD /bin/bash /opt/startmysql.sh
 
 # example usage:
-# sudo docker run -d -p 3306:3306 -name todomvc_db -v /data/mysql:/var/lib/mysql cpswan/todomvc_mysql
+# sudo docker run -d -p 3306:3306 -name todomvc_db -v /data/mysql:/var/lib/mysql cpswan/todomvc.mysql
