@@ -30,4 +30,4 @@ EXPOSE 443
 CMD /bin/bash /opt/start_nginx.sh
 
 # Example runline:
-# sudo docker run -d -p 443:443 -name todomvc_ssl -link todomvc_app:app cpswan/todomvc_ssl
+# sudo docker run -d -p 443:443 -name todomvc_ssl -link todomvc_app:app cpswan/todomvc.ssl
