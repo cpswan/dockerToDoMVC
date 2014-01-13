@@ -1,0 +1,4 @@
+upstream appserver  {
+          server $APP_PORT_4567_TCP_ADDR:$APP_PORT_4567_TCP_PORT;
+    }
+}
