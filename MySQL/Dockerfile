@@ -2,9 +2,6 @@ FROM ubuntu:12.04
 
 MAINTAINER cpswan
 
-# make sure everything is up to date - update and upgrade
-RUN apt-get update && apt-get upgrade -y
-
 # install mysql
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y mysql-server
