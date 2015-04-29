@@ -15,6 +15,9 @@ RUN apt-get install -y rubygems libmysqlclient-dev unzip
 # install gems
 RUN gem install sinatra sinatra-contrib data_mapper dm-mysql-adapter --no-rdoc --no-ri
 
+# remove conflicting version of tilt
+RUN gem uninstall tilt -v 2.0.1
+
 # copy and install sinatra-ToDoMVC application
 ADD https://github.com/cpswan/sinatra-ToDoMVC/archive/docker.zip /opt/sinatra-ToDoMVC.zip
 RUN cd /opt && unzip /opt/sinatra-ToDoMVC.zip
